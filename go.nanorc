@@ -9,8 +9,13 @@ KEYWORD:  "\<(package|import|const|var|type|struct|func|go|defer|nil|iota)\>"
 KEYWORD:  "\<(for|range|if|else|case|default|switch|continue|break|return)\>"
 +GOTO
 +BOOLEAN
-OPERATOR: "[-+/*=<>!~%&|^]|:="
+#OPERATOR: "[-+/*=<>!~%&|^]|:="
 NUMBER:   "\<([0-9]+|0x[0-9a-fA-F]*)\>|'.'"
 +STRING
 +CCOMMENT
 +LINT
+
+#Parenthetical Color
+color magenta "[(){}]" "\[" "\]"
+
+color white "	"
